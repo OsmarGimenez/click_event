@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Click to learn the elements!</h1>
+
+    <div class="main">
+        <!-- en el evento on click en este caso se usa una funcion de js que ya esta 
+        predefinida y creada por lo que nos dara un modal al dar click sobre el elemento -->
+        <div class="element" onclick="alert('Hydrogen')">
+            <h3>H</h3>
+            <p>1.008</p>
+        </div>
+        <!-- en este caso usamos la funcion displayName que creamos nosotros en nuestro archivo 
+            script.js el cual solo nos da el nombre del elemento por consola. -->
+        <div class="element" onclick="displayName('Helium')">
+            <h3>He</h3>
+            <p>4.003</p>
+        </div>
+
+        <div class="element" onclick="displayName('Lithium')">
+            <h3>Li</h3>
+            <p>6.941</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
